@@ -12,6 +12,9 @@ public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+이
+    @Column(nullable = false)
+    private String email;
 
     @Column(nullable = false)
     private String name;
@@ -25,8 +28,9 @@ public class User extends BaseTimeEntity {
 //    private Role role;
 
     @Builder
-    public User(Long id, String name, String phone, String profileImg) {
+    public User(Long id, String email, String name, String phone, String profileImg) {
         this.id = id;
+        this.email = email;
         this.name = name;
         this.phone = phone;
         this.profileImg = profileImg;
