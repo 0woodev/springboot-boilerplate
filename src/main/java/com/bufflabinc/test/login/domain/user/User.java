@@ -12,7 +12,7 @@ public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-이
+
     @Column(nullable = false)
     private String email;
 
