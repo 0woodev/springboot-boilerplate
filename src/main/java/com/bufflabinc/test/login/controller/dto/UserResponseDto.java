@@ -1,28 +1,26 @@
 package com.bufflabinc.test.login.controller.dto;
 
 import com.bufflabinc.test.login.domain.user.User;
+import lombok.Getter;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
+@Getter
 public class UserResponseDto {
 
-    private Long id;
+    private final Long id;
 
-    private String email;
+    private final String email;
 
-    private String name;
+    private final String name;
 
-    private String phone;
+//    private final String phone;
 
-    private String profileImg;
+    private final String profileImg;
 
     public UserResponseDto(User user) {
         this.id = user.getId();
         this.email =user.getEmail();
         this.name = user.getName();
-        this.phone = user.getPhone();
+//        this.phone = user.getPhone();
         this.profileImg = user.getProfileImg();
     }
 }
