@@ -5,7 +5,7 @@ spring:
         registration:
           google:
             client-id: test
-            client-secret:
+            client-secret: test2
             scope: profile, email
           kakao:
             client-id:
