@@ -1,4 +1,4 @@
-package com.bufflabinc.test.login.config;
+package com.bufflabinc.test.login.config.auth;
 
 import com.bufflabinc.test.login.config.auth.dto.OAuthAttributes;
 import com.bufflabinc.test.login.config.auth.dto.SessionUser;
