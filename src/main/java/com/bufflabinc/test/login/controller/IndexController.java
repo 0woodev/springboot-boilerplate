@@ -41,6 +41,8 @@ public class IndexController {
                         "<br>" +
                         "<a href=\"http://localhost:8080/oauth2/authorization/kakao\">Login with Kakao</a>" +
                         "<br>" +
+                        "<a href=\"http://localhost:8080/oauth2/authorization/naver\">Login with Naver</a>" +
+                        "<br>" +
                         "<a href=\"http://localhost:8080/api/user/all\">get all user</a>" +
                         "<br>" +
                         "<a href=\"http://localhost:8080/swagger-ui/index.html\">Swagger</a>" +
