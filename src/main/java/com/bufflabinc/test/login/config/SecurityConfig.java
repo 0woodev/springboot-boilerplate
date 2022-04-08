@@ -36,8 +36,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
          * URL 별 권한 관리를 설정하는 옵션의 시작점
          */
         http.authorizeRequests()
-                .antMatchers("/", "/api/hello", "/css/**", "/js/**", "/swagger-ui/**").permitAll()
-                .antMatchers("/api/**", "/db").hasRole(Role.USER.name()) //hasRole(Role.USER.name())
+                .antMatchers("/", "/api/hello", "/css/**", "/js/**", "/swagger-ui/index.html").permitAll()
+                .antMatchers("/api/**", "/db").hasRole(Role.USER.name())
+                .antMatchers("/dashboard/**").hasRole(Role.ADMIN.name())
                 .anyRequest().authenticated();
 
         /*
