@@ -34,7 +34,7 @@ public class IndexController {
         out.println(
                 "<html>" +
                     "<head>" +
-                        "<title>안녕하세욤</title>" +
+                        "<title>Springboot Boilerplate</title>" +
                     "</head>" +
                     "<body>" +
                         "<a href=\"http://localhost:8080/oauth2/authorization/google\">Login with Google</a>" +
